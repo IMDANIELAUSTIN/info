@@ -14,6 +14,7 @@
     }
 
 .nav-content {
+    position: unset;
     max-width: 1024px;
     margin: 0 auto;
     padding: 8px;
@@ -21,6 +22,7 @@
     justify-content: space-between;
 }
 .nav-content a {
+    position: static;
     display: block;
     font-size: 16pt;
     font-weight: bold;
@@ -35,6 +37,7 @@
 }
 
 .nav-links {
+    z-index: 1;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -216,10 +219,11 @@ h3, h4, p, body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -235,7 +239,7 @@ u, hr {
 }
 
 a:link , a:visited {
-    background-color: transparent;
+    background-color: #1e1e1e;
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -249,17 +253,18 @@ a:active, a:hover {
 
 img {
     color: transparent;
+    display: inline-flex;
     cursor: pointer;
-    margin: 8;
+    margin: 16;
     border-radius: 16px;
-    align-content: middle;
+    align-content: ceneter;
     text-align: center;
-    position: relative;
+    position: inherit;
 }
 
 .cover {
   object-fit: cover;
-  max-height: auto%;
+  max-height: auto;
   min-width: 325;
   max-width: 975;
 
@@ -284,11 +289,11 @@ footer {
 footer a{
     text-decoration: none;
     color: #000000;
-    text-align: center; 
+    text-align: center;
     padding: 8px;
-    font-weight: bold;
-    font-size: 16pt
-    }  
+    /* font-weight: bold; */
+    font-size: 16pt;
+}  
 
 footer ul{
     display: inline-flex;
@@ -349,10 +354,11 @@ h3, h4, p , body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -360,7 +366,7 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
     .nav-links {
-        position: fixed;
+        position: static;
         top: 44px;
         right: 0;
         height: 0;
@@ -371,13 +377,13 @@ pre {
         flex-direction: column;
         justify-content: flex-start;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
+background-color 0.3s;
     }
     
     .nav-links a:hover{
-    background: transparent;
-    color: #ff0000;
-    opacity: 100%;
+        background: #;
+        color: #ff0000;
+        opacity: 100%;
     }
     
     .show .nav-links {
@@ -391,7 +397,7 @@ pre {
     .nav-links a {
         height: 0;
         width: 0;
-        opacity: 0;
+        opacity: 100;
         overflow: hidden;
         margin-top: 48px;
         margin-right: 48px;
@@ -400,7 +406,7 @@ pre {
     }
     
     .show .nav-links a {
-        opacity: 1;
+        opacity: 100;
         width: auto;
         height: auto;
     }
@@ -549,10 +555,11 @@ h3, h4, p, body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -568,7 +575,7 @@ u, hr {
 }
 
 a:link , a:visited {
-    background-color: transparent;
+    background-color: #1e1e1e;
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -585,7 +592,7 @@ img {
     cursor: pointer;
     margin: 8;
     border-radius: 16px;
-    align-content: middle;
+    align-content: center;
     text-align: center;
     position: relative;
 }
@@ -617,11 +624,11 @@ footer {
 footer a{
     text-decoration: none;
     color: #000000;
-    text-align: center; 
+    text-align: center;
     padding: 8px;
-    font-weight: bold;
-    font-size: 16pt
-    }  
+    /* font-weight: bold; */
+    font-size: 16pt;
+}  
 
 footer ul{
     display: inline-flex;
@@ -682,10 +689,11 @@ h3, h4, p , body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -704,7 +712,7 @@ pre {
         flex-direction: column;
         justify-content: flex-start;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
+background-color 0.3s;
     }
     
     .nav-links a:hover{
@@ -718,13 +726,13 @@ pre {
         background-color: #1e1e1e;
         opacity: 100%;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
+background-color 0.3s;
     }
     
     .nav-links a {
         height: 0;
         width: 0;
-        opacity: 0;
+        opacity: 100;
         overflow: hidden;
         margin-top: 48px;
         margin-right: 48px;
@@ -733,7 +741,7 @@ pre {
     }
     
     .show .nav-links a {
-        opacity: 1;
+        opacity: 100;
         width: auto;
         height: auto;
     }
@@ -881,10 +889,11 @@ h3, h4, p, body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -900,7 +909,7 @@ u, hr {
 }
 
 a:link , a:visited {
-    background-color: transparent;
+    background-color: #1e1e1e;
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -917,7 +926,7 @@ img {
     cursor: pointer;
     margin: 8;
     border-radius: 16px;
-    align-content: middle;
+    align-content: center;
     text-align: center;
     position: relative;
 }
@@ -949,11 +958,11 @@ footer {
 footer a{
     text-decoration: none;
     color: #000000;
-    text-align: center; 
+    text-align: center;
     padding: 8px;
-    font-weight: bold;
-    font-size: 16pt
-    }  
+    /* font-weight: bold; */
+    font-size: 16pt;
+}  
 
 footer ul{
     display: inline-flex;
@@ -1014,10 +1023,11 @@ h3, h4, p , body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -1214,10 +1224,11 @@ h3, h4, p, body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -1233,7 +1244,7 @@ u, hr {
 }
 
 a:link , a:visited {
-    background-color: transparent;
+    background-color: #1e1e1e;
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -1250,7 +1261,7 @@ img {
     cursor: pointer;
     margin: 8;
     border-radius: 16px;
-    align-content: middle;
+    align-content: center;
     text-align: center;
     position: relative;
 }
@@ -1282,11 +1293,11 @@ footer {
 footer a{
     text-decoration: none;
     color: #000000;
-    text-align: center; 
+    text-align: center;
     padding: 8px;
-    font-weight: bold;
-    font-size: 16pt
-    }  
+    /* font-weight: bold; */
+    font-size: 16pt;
+}  
 
 footer ul{
     display: inline-flex;
@@ -1346,10 +1357,11 @@ h3, h4, p , body {
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -1541,15 +1553,16 @@ h1 , h2 , ul, ol, li, head {
 h3, h4, p, body {
     color: #ffffff;
     font-weight: normal;
-    font-size: 12pt;
+    font-size: 16pt;
     leading: 1.2pt;
 }
 
 pre {
+    display: inline-table;
     color: #ffffff; 
     font-weight: normal;
-    font-size: 12pt;
-    leading: 2pt;
+    font-size: 16pt;
+    leading: 1.2pt;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -1565,7 +1578,7 @@ u, hr {
 }
 
 a:link , a:visited {
-    background-color: transparent;
+    background-color: #1e1e1e;
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -1573,16 +1586,37 @@ a:link , a:visited {
 }
 
 a:active, a:hover {
-    background-color: transparent;
+    background-color: #1e1e1e;
+    color: #ff0000;
+}
+
+nav-links :hover{
+    background: #1e1e1e;
+    color: #ff0000;
+    }
+
+nav-links:link , nav-links:visited {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav-links:active, nav-links:hover {
+    background-color: #1e1e1e;
     color: #ff0000;
 }
 
 img {
+    max-width: 100%;
+    height: auto;
     color: transparent;
+    display: block;
     cursor: pointer;
-    margin: 8;
+    margin: auto;
     border-radius: 16px;
-    align-content: middle;
+    align-content: center;
     text-align: center;
     position: relative;
 }
@@ -1612,13 +1646,14 @@ footer {
     }
     
 footer a{
+    display: inline-flex;
     text-decoration: none;
     color: #000000;
-    text-align: center; 
+    text-align: center;
     padding: 8px;
-    font-weight: bold;
-    font-size: 16pt
-    }  
+    /* font-weight: bold; */
+    font-size: 16pt;
+}  
 
 footer ul{
     display: inline-flex;
