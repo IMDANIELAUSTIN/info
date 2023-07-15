@@ -5,8 +5,8 @@
     color: #ffffff;
     text-decoration-color: #ffffff;
     background: #1e1e1e;
-  	padding: 16px 0;
-  	color: #ff0000;
+    padding: 16px 0;
+    color: #ff0000;
     }
 
 .logo {
@@ -360,9 +360,7 @@ img {
     color: transparent;
     display: inline-flex;
     cursor: pointer;
-    margin: 16;
-    border-radius: 16px;
-    align-content: ceneter;
+    align-content: center;
     text-align: center;
     position: inherit;
 }
@@ -680,8 +678,6 @@ a:active, a:hover {
 img {
     color: transparent;
     cursor: pointer;
-    margin: 8;
-    border-radius: 16px;
     align-content: center;
     text-align: center;
     position: relative;
@@ -1662,10 +1658,10 @@ nav-links:active, nav-links:hover {
 }
 
 img {
-    max-width: 100%;
+    max-width: 1080;
     height: auto;
     color: transparent;
-    display: static;
+    display: flex;
     cursor: pointer;
     margin: auto;
     align-content: center;
